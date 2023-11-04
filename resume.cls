@@ -1,25 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV - RESUME CLASS FILE
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% This class file defines the structure and design of the template. 
-%
-% Original header:
-% Copyright (C) 2010 by Trey Hunner
-%
-% Copying and distribution of this file, with or without modification,
-% are permitted in any medium without royalty provided the copyright
-% notice and this notice are preserved. This file is offered as-is,
-% without any warranty.
-%
-% Created by Trey Hunner and modified by www.LaTeXTemplates.com
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
-
+\ProvidesClass{resume}
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
@@ -76,7 +55,7 @@
 }
 
 % \printprofession
-\def \printprofession {
+\def \printprofession{
     \vspace{-.7cm}
     \begingroup
       \hfil{\Large\MakeUppercase \@profession}\hfil
@@ -109,7 +88,7 @@
 %----------------------------------------------------------------------------------------
 \newcommand{\xfilll}[2][1ex]{
 \dimen0=#2\advance\dimen0 by #1
-\leaders\hrule height \dimen0 depth -#1\hfill}
+\leaders\hrule height \dimen0 depth +#1\hfill}
 
 % Adjusting the margins
 \enlargethispage{2\baselineskip} % you can adjust the number based on your content's fit in the page
@@ -131,18 +110,12 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{experienceItem}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
-  {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
-  }\smallskip
-  % \begin{list}{}{\leftmargin=0em} % \cdot used for bullets, no indentation
-   % \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-  }{
-  % \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
-}
+\newenvironment{experienceItem}[4]{ % 4 input arguments - text for top left, top right, bottom left and bottom right
+  {\bf #1} \hfill {#2}
+  \ifthenelse{\equal{#3}{}}{\vspace{0.05cm}\\}{   \\
+    {\em #3} \hfill {\em #4} \vspace{-0.4cm}\\
+  }
+}{}
 
 
 
@@ -151,7 +124,6 @@
 \newenvironment{cSection}[5]{ \sectionskip
   \centering
   \begin{minipage}{#1}
-  \begin{framed}
   
   \begin{minipage}{#2}
   {#4}
@@ -162,12 +134,10 @@
   \end{minipage}
 }
 {
-  \end{framed}
   \end{minipage}
 }
 
 \newenvironment{cSubsection}[1]{ % 5 input arguments - environment width, company name, year(s) employed, job title and location
-\begin{framed}
   \section*{{\LARGE \MakeUppercase{\bf #1}}\xfilll[0pt]{0.5pt}}
 
   \begin{list}{}{ % List for each individual item in the section
@@ -176,7 +146,6 @@
   \item[]
 }{
   \end{list}
-  \end{framed}
 }
 
 

@@ -15,9 +15,8 @@
 \RequirePackage{hyperref}
 \hypersetup{%
     colorlinks=true,
-    urlcolor=urlcolor,
+    urlcolor=blue,
     pdftitle={resume},
-    pdfpagemode=FullScreen,
     }
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
@@ -113,7 +112,7 @@
 %	SECTION FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newcommand{\craisedrule}[2][0em]{\leaders\hbox{\rule[#1]{1pt}{#2}}\hfill}
+\newcommand{\craisedrule}[2][0em]{\leaders\hbox{\rule[#1]{1pt}{#2}}\hfill\hspace{-0.325cm}}
 \newcommand{\cfilll}[2][1ex]{
 \dimen0=#2\advance\dimen0 by #1
 \color{themecolor}\craisedrule{2pt}}
@@ -176,6 +175,7 @@
 
 \newenvironment{cSubsection}[1]{ % 5 input arguments - environment width, company name, year(s) employed, job title and location
   \section*{{\LARGE \MakeUppercase{\bf #1}}\cfilll[0pt]{1.5pt}}
+  \vspace{-0.2cm}
 
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{1.5em} % Margin within the section
@@ -183,9 +183,8 @@
   \item[]
 }{
   \end{list}
+  \vspace{-0.3cm}
 }
-
-
 
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip

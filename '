@@ -5,7 +5,6 @@
 \RequirePackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 
 \RequirePackage{xcolor}
-\RequirePackage{framed}
 \PassOptionsToPackage{dvipsnames,svgnames}{xcolor}
 \definecolor{themecolor}{HTML}{a91b27}
 \definecolor{urlcolor}{HTML}{204487}
@@ -27,7 +26,7 @@
 \RequirePackage{tikz}
 \RequirePackage{float}
 \newcommand{\roundpic}[1]{\begin{tikzpicture}[remember picture,overlay]
-    \node[xshift=130.345mm,yshift=4.5mm,anchor=north west] at (current page.north west){%
+    \node[xshift=150mm,yshift=-1.5mm,anchor=north west] at (current page.north west){%
     \includegraphics[height=70mm]{#1}};
 \end{tikzpicture}}
 
@@ -112,23 +111,14 @@
 %----------------------------------------------------------------------------------------
 %	SECTION FORMATTING
 %----------------------------------------------------------------------------------------
-
-\newcommand{\craisedrule}[2][0em]{\leaders\hbox{\rule[#1]{1pt}{#2}}\hfill}
-\newcommand{\cfilll}[2][1ex]{
-\dimen0=#2\advance\dimen0 by #1
-\color{themecolor}\craisedrule{2pt}}
-
-
-\newcommand{\raisedrule}[2][0em]{\leaders\hbox{\rule[#1]{1pt}{#2}}\hfill\hspace{-1.1cm}}
 \newcommand{\xfilll}[2][1ex]{
 \dimen0=#2\advance\dimen0 by #1
-\color{themecolor}\raisedrule{2pt}}
+\color{themecolor}\leaders\hrule height \dimen0 depth +#1\hfill}
 
 % Adjusting the margins
 \enlargethispage{2\baselineskip} % you can adjust the number based on your content's fit in the page
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
-  % \begin{framed}
   \sectionskip
   \section*{{\LARGE \MakeUppercase{\bf #1}}\xfilll[0pt]{1.5pt}}
 
@@ -140,7 +130,6 @@
 }{
   \end{list}
   \vspace{-.2cm}
-% \end{framed}
 }
 
 %----------------------------------------------------------------------------------------
@@ -175,7 +164,7 @@
 }
 
 \newenvironment{cSubsection}[1]{ % 5 input arguments - environment width, company name, year(s) employed, job title and location
-  \section*{{\LARGE \MakeUppercase{\bf #1}}\cfilll[0pt]{1.5pt}}
+  \section*{{\LARGE \MakeUppercase{\bf #1}}\xfilll[0pt]{1.5pt}}
 
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{1.5em} % Margin within the section

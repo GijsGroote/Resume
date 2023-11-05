@@ -1,9 +1,29 @@
 \ProvidesClass{resume}
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
 
-\usepackage[parfill]{parskip} % Remove paragraph indentation
-\usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
-\usepackage{ifthen} % Required for ifthenelse statements
+\RequirePackage[parfill]{parskip} % Remove paragraph indentation
+\RequirePackage{array} % Required for boldface (\bf and \bfseries) tabular columns
+
+\RequirePackage{xcolor}
+\PassOptionsToPackage{dvipsnames,svgnames}{xcolor}
+% \definecolor{themecolor}{RGB}{30,129,176}
+\definecolor{themecolor}{HTML}{a91b27}
+\definecolor{urlcolor}{HTML}{204487}
+\RequirePackage{titlesec}
+\RequirePackage{fontawesome5}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{hyperref}
+\hypersetup{%
+    colorlinks=true,
+    urlcolor=urlcolor,
+    pdftitle={resume},
+    pdfpagemode=FullScreen,
+    }
+    
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+
+
 
 \pagestyle{empty} % Suppress page numbers
 
@@ -88,22 +108,23 @@
 %----------------------------------------------------------------------------------------
 \newcommand{\xfilll}[2][1ex]{
 \dimen0=#2\advance\dimen0 by #1
-\leaders\hrule height \dimen0 depth +#1\hfill}
+\color{themecolor}\leaders\hrule height \dimen0 depth +#1\hfill}
 
 % Adjusting the margins
 \enlargethispage{2\baselineskip} % you can adjust the number based on your content's fit in the page
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \sectionskip
-  \section*{{\LARGE \MakeUppercase{\bf #1}}\xfilll[0pt]{0.5pt}}
+  \section*{{\LARGE \MakeUppercase{\bf #1}}\xfilll[0pt]{1.5pt}}
   
-   % Section title
+  \vspace{-.3cm}
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{1.5em} % Margin within the section
   }
   \item[]
 }{
   \end{list}
+  \vspace{-.2cm}
 }
 
 %----------------------------------------------------------------------------------------
@@ -112,8 +133,8 @@
 
 \newenvironment{experienceItem}[4]{ % 4 input arguments - text for top left, top right, bottom left and bottom right
   {\bf #1} \hfill {#2}
-  \ifthenelse{\equal{#3}{}}{\vspace{0.05cm}\\}{   \\
-    {\em #3} \hfill {\em #4} \vspace{-0.4cm}\\
+  \ifthenelse{\equal{#3}{}}{\vspace{-0.05cm}\\}{   \\
+    {\em #3} \hfill {\em #4} \vspace{-0.5cm}\\
   }
 }{}
 
@@ -138,7 +159,7 @@
 }
 
 \newenvironment{cSubsection}[1]{ % 5 input arguments - environment width, company name, year(s) employed, job title and location
-  \section*{{\LARGE \MakeUppercase{\bf #1}}\xfilll[0pt]{0.5pt}}
+  \section*{{\LARGE \MakeUppercase{\bf #1}}\xfilll[0pt]{1.5pt}}
 
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{1.5em} % Margin within the section

@@ -1,23 +1,6 @@
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage{xcolor}
-\definecolor{themecolor}{RGB}{30,129,176}
-
-\usepackage{framed}
-\usepackage{titlesec}
-\usepackage{fontawesome5}
-\usepackage[hidelinks]{hyperref}
-\usepackage{hyperref}
-\hypersetup{%
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=cyan,
-    pdftitle={Overleaf Example},
-    pdfpagemode=FullScreen,
-    }
-    
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{ifthen} % Required for ifthenelse statements
 
 % TODO: make options for with/without picture
 % TODO: make options for short/extensive resume
@@ -29,10 +12,11 @@
 \newcommand{\babelDU}[1]{\ifnum\pdfstrcmp{\languagename}{dutch}=0 {#1}\fi}
 \newcommand{\babelEN}[1]{\ifnum\pdfstrcmp{\languagename}{english}=0 {#1}\fi}
 
+
 \name{Gijs Stoffer Groote}
-\profession{\babel{Regeltechniek Ingenieur}{Control Engineer}}
+\profession{\babel{Ingenieur Regeltechniek}{Control Engineer}}
 \address{\href{https://maps.app.goo.gl/1rpuNh15To3yUqcn7}{{\color{themecolor} \faIcon{map-marker}}~Westerstraat 7,~2613~RD, Delft \babel{}{the Netherlands}}\hspace{0.5cm}\href{tel:+31642498953}{{\color{themecolor} \faIcon{phone}}~+316~424~989~53}}
-\address{{\color{themecolor} \href{mailto:gijsgroote@hotmail.com}{\faIcon{envelope}~gijsgroote@hotmail.com}}\hspace{0.5cm}~\href{https://github.com/GijsGroote}{\color{themecolor} \faIcon{github}~Github}\hspace{0.5cm}~\href{https://www.linkedin.com/in/gijs-groote-7ab6aa122/}{{\color{themecolor} \faIcon{linkedin}}~Linkedin}}
+\address{{\href{mailto:gijsgroote@hotmail.com}{{\color{themecolor} \faIcon{envelope}}~gijsgroote@hotmail.com}}\hspace{0.5cm}~\href{https://github.com/GijsGroote}{{\color{themecolor} \faIcon{github}}~Github}\hspace{0.5cm}~\href{https://www.linkedin.com/in/gijs-groote-7ab6aa122/}{{\color{themecolor} \faIcon{linkedin}}~Linkedin}}
 
 \begin{document}
 

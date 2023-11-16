@@ -3,13 +3,12 @@
 \usepackage{ifthen} % Required for ifthenelse statements
 
 
-
 % COMMENT UNCOMMENT FOR PICTURE
 \newcommand{\usephoto}{true}
 
 % COMMENT UNCOMMENT FOR ENGLISH/DUTCH
-% \usepackage[dutch,english]{babel} % makes ENGLISH content
-\usepackage[english,dutch]{babel} % makes DUTCH content
+\usepackage[dutch,english]{babel} % makes ENGLISH content
+% \usepackage[english,dutch]{babel} % makes DUTCH content
 
 \newcommand{\babel}[2]{\ifnum\pdfstrcmp{\languagename}{english}=0 {#2}\else{#1}\fi}
 

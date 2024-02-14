@@ -4,6 +4,7 @@
 \RequirePackage[parfill]{parskip} % Remove paragraph indentation
 \RequirePackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 
+\RequirePackage{zref-savepos}
 \RequirePackage{xcolor}
 \RequirePackage{framed}
 \PassOptionsToPackage{dvipsnames,svgnames}{xcolor}
@@ -20,6 +21,7 @@
     }
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
 
 
 % For the picture
@@ -146,13 +148,25 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{experienceItem}[4]{ % 4 input arguments - text for top left, top right, bottom left and bottom right
+\newenvironment{experienceItem}[4]{ 
+  % \ifthenelse{\larger{\currentpos{text}{100pt}}{\newpage}{}
+  % 4 input arguments - text for top left, top right, bottom left and bottom right
   {\bf #1} \hfill {#2}
   \ifthenelse{\equal{#3}{}}{\vspace{-0.05cm}\\}{   \\
     {\em #3} \hfill {\em #4} \vspace{-0.5cm}\\
   }
 }{}
 
+% \newcommand*{\currpos}[1]{%
+%   \zsavepos{#1}%
+
+%   (\zposx{#1}sp, \zposy{#1}sp) =
+%   % (\the\dimexpr\zposx{#1}sp\relax, \the\dimexpr\zposy{#1}sp\relax)%
+% \the\dimexpr\zposx{#1}sp\relax
+% % \ifnum{\value{\zposx{#1}}}>30 {A} \else {B}\fi
+%   % larger than 200?
+%   % \ifthenelse{\value{\zposx{#1}}>{200}}{yes, that larger}{no, not larger}  
+% }
 
 
 % Adjusting the margins

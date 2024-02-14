@@ -10,13 +10,74 @@
 
 
 %----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\begin{rSection}{\babel{Werk Ervaring}{Work Experience}}
+
+\ifthenelse{\equal{\extendedWorkExp}{true}}
+{%------------------------------------------------
+  \begin{experienceItem}
+    {Reclameverspreiding Eindhoven}{\babel{Augustus}{August} 2008 - September 2012}{\babel{Krantenbezorger}{Newspaper Caretaker}}{Nederwetten, Noord-Brabant}
+\end{experienceItem}}{}
+
+  %------------------------------------------------
+  \begin{experienceItem}
+    {Slinders}{\babel{Augustus}{August} 2012 - \babel{Juni}{June} 2015}{{\babel{Hulpchef}{Aid Chief}}}{Nederwetten, Noord-Brabant}
+  \end{experienceItem}
+
+
+\ifthenelse{\equal{\extendedWorkExp}{true}}
+{%------------------------------------------------
+  \begin{experienceItem}
+    {Flinders}{\babel{Mei}{May} 2015 - \babel{Augustus}{August} 2015}{\babel{Kok}{Cook}}{Groningen, Groningen}
+\end{experienceItem} 
+
+  %------------------------------------------------
+  \begin{experienceItem}
+    {IKEA}{\babel{Juni}{June} 2017 - \babel{Augustus}{August} 2017}{\babel{Logistiek Medewerker}{logistics employee}}{Delft, \babel{Zuid}{South}-Holland}
+\end{experienceItem}}{}
+
+
+\ifthenelse{\equal{\extendedWorkExp}{true}}
+{% ------------------------------------------------
+  \begin{experienceItem}
+    {Choconut BV}{(\babel{vakantiewerk}{seasonal work}) December 2013 - December 2018}{\babel{Productiemedewerker}{Industrial Worker}}{Zuidwolde, Drente}
+\end{experienceItem}}{}
+
+  %------------------------------------------------
+  \begin{experienceItem}
+    {TU Delft, 3mE}{September 2018 - April 2020}{Studentmentor}{Delft, \babel{Zuid}{South}-Holland}
+  \end{experienceItem}
+
+\ifthenelse{\equal{\extendedWorkExp}{true}}
+{%------------------------------------------------
+  \begin{experienceItem}
+    {ROCSYS}{May 2019 - August 2019}{\babel{Junior Ingenieur}{Junior Engineer}}{Delft, \babel{Zuid}{South}-Holland}
+\end{experienceItem}
+}{}
+
+  %------------------------------------------------
+  \begin{experienceItem}
+    {Sport Complex X}{September 2021 - \babel{Februari}{Febuary} 2024}{\babel{Boksleraar}{Boxing Instructor}}{Delft, \babel{Zuid}{South}-Holland}
+  \end{experienceItem}
+
+  %------------------------------------------------
+  \begin{experienceItem}
+    {TU Delft, 3mE, IWS \babel{Werkplaats}{Workshop}}{September 2017 - \babel{Heden}{Present}}{\babel{Studentassistent}{Teaching Assistant}}{Delft, \babel{Zuid}{South}-Holland}
+  \end{experienceItem}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{\babel{Opleiding}{Education}}
-  %------------------------------------------------
+\ifthenelse{\equal{\extendedEduExp}{true}}
+{%------------------------------------------------
   \begin{experienceItem}
     {\babel{Basis}{Elemantary} School, Sint-Jozef}{2000 - 2009}{Cito Score: 546}{Nederwetten, \babel{Noord}{North}-Brabant}
-  \end{experienceItem}
+\end{experienceItem}
 
   %------------------------------------------------
   \begin{experienceItem}
@@ -26,17 +87,19 @@
   %------------------------------------------------
   \begin{experienceItem}
     {\babel{Hoger Beroepsonderwijs}{University of Applied Sciences}, Hanze}{September 2014 - \babel{Augustus}{August} 2015} {\babel{Werktuigbouwkunde, Propedeuse}{Mechanical Engineering, Foundation Year} }{Groningen, Groningen}
-  \end{experienceItem}
+  \end{experienceItem}}{}
 
   %------------------------------------------------
   \begin{experienceItem}
     {\babel{Technische Universiteit}{Technical University} Delft}{September 2015 - \babel{Juni}{June} 2019}{BSc. \babel{Werktuigbouwkunde}{Mechanical Engineering}}{Delft, \babel{Zuid}{South}-Holland}
   \end{experienceItem}
 
-  \begin{experienceItem}
-    {}{}{\babel{Vrije}{Individual} Minor in Computer Science:}{}
-  \end{experienceItem}
 
+\ifthenelse{\equal{\extendedEduExp}{true}}
+{%------------------------------------------------
+  \begin{experienceItem}
+    {}{}{\babel{Vrije}{Individual} Minor in Computer Science}{}
+  \end{experienceItem}
   \begin{center}
   \begin{minipage}{0.45\textwidth}
   \begin{itemize}
@@ -53,10 +116,10 @@
   \end{itemize}
   \end{minipage}
   \end{center}
-  \vspace{0.3cm}
+\vspace{0.3cm}
 
   \textit{\babel{Aanvullende behaalde vakken}{Additional courses followed}:}\hspace{0.2cm} OOP Project, Computer Organisation\\
-  \vspace{-0.5cm}
+  \vspace{-0.5cm}}{}
 
   \noindent\textit{\babel{Schakelprogramma naar}{Bridging Programme to} MSc. Computer Science}\hspace{0.1cm} (\babel{behaald}{completed})
 
@@ -65,6 +128,8 @@
     {\babel{Technische Universiteit}{Technical University} Delft}{September 2019 - \babel{Juni}{June} 2023}{MSc. System \& Control}{Delft, \babel{Zuid}{South}-Holland}
   \end{experienceItem}
 
+\ifthenelse{\equal{\extendedEduExp}{true}}
+{%------------------------------------------------
   \begin{experienceItem}
     {}{}{\babel{Keuzevakken}{Electives}:}{}
   \end{experienceItem}
@@ -87,61 +152,23 @@
 \end{center}
 
 \textit{\babel{Aanvullende behaalde vakken}{Additional courses followed}:}\hspace{0.2cm}\begin{minipage}{10cm}\vspace{\baselineskip}
-Robot Software Practicals, System Validation\\Robot Motion Planning, Model Predictive Control\end{minipage}
+Robot Software Practicals, System Validation\\Robot Motion Planning, Model Predictive Control\end{minipage}}{}
 
 \textit{\babel{MSc. Scriptie}{MSc. Thesis}:} 
 \begin{center}``\href{https://repository.tudelft.nl/islandora/object/uuid\%3Af988aaf6-c2a7-4782-b5de-8ca6187d03ef?collection=education}{\Large A graph-based search approach for planning and learning}''. 
 \end{center}
 
 \end{rSection}
-\newpage
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE
-%----------------------------------------------------------------------------------------
-\begin{rSection}{\babel{Werk Ervaring}{Work Experience}}
-  %------------------------------------------------
-  \begin{experienceItem}
-    {Reclameverspreiding Eindhoven}{\babel{Augustus}{August} 2008 - September 2012}{\babel{Krantenbezorger}{Newspaper Caretaker}}{Nederwetten, Noord-Brabant}
-  \end{experienceItem}
-
-  %------------------------------------------------
-  \begin{experienceItem}
-    {Slinders}{\babel{Augustus}{August} 2012 - \babel{Juni}{June} 2015}{{\babel{Hulpchef}{Aid Chief}}}{Nederwetten, Noord-Brabant}
-  \end{experienceItem}
-
-  %------------------------------------------------
-  \begin{experienceItem}
-    {Choconut BV}{(\babel{vakantiewerk}{seasonal work}) December 2013 - December 2018}{\babel{Productiemedewerker}{Industrial Worker}}{Zuidwolde, Drente}
-  \end{experienceItem}
-
-  %------------------------------------------------
-  \begin{experienceItem}
-    {TU Delft, 3mE}{September 2018 - April 2020}{Studentmentor}{Delft, \babel{Zuid}{South}-Holland}
-  \end{experienceItem}
-
-  %------------------------------------------------
-  \begin{experienceItem}
-    {ROCSYS}{May 2019 - August 2019}{\babel{Junior Ingenieur}{Junior Engineer}}{Delft, \babel{Zuid}{South}-Holland}
-  \end{experienceItem}
-
-  %------------------------------------------------
-  \begin{experienceItem}
-    {TU Delft, 3mE, IWS \babel{Werkplaats}{Workshop}}{September 2017 - \babel{Heden}{Present}}{\babel{Studentassistent}{Teaching Assistant}}{Delft, \babel{Zuid}{South}-Holland}
-  \end{experienceItem}
-
-  %------------------------------------------------
-  \begin{experienceItem}
-    {Sport Complex X}{September 2021 - \babel{Heden}{Present}}{\babel{Boksleraar}{Boxing Instructor}}{Delft, \babel{Zuid}{South}-Holland}
-  \end{experienceItem}
-
-\end{rSection}
 
 
 \begin{rSection}{\babel{Comissie's}{Commitees}}
+
   %------------------------------------------------
+
+\ifthenelse{\equal{\extendedOtherExp}{true}}
+{%------------------------------------------------
   \begin{experienceItem}{Virgiel, OHC}{September 2016 - September 2017}{\babel{Lid Kluscommissie}{Member Renovator Commision}}{Delft, \babel{Zuid}{South}-Holland}
-  \end{experienceItem}
+\end{experienceItem}}{}
 
   %------------------------------------------------
   \begin{experienceItem}{Virgiel, Barbara's \babel{Boks Academie}{Boxing Academy}}{September 2018 - September 2020}{\babel{Voorzitter}{Chairman}}{Delft, \babel{Zuid}{South}-Holland}
@@ -153,7 +180,7 @@ Robot Software Practicals, System Validation\\Robot Motion Planning, Model Predi
   \end{experienceItem}
 
 \end{rSection}
-
+\newpage
 
 %----------------------------------------------------------------------------------------
 %	TWO COLUMNS BABY!
@@ -211,11 +238,13 @@ Robot Software Practicals, System Validation\\Robot Motion Planning, Model Predi
 %----------------------------------------------------------------------------------------
 %	HOBBIES
 %----------------------------------------------------------------------------------------
+\ifthenelse{\equal{\extendedOtherExp}{true}}
+{%------------------------------------------------
 \begin{cSubsection}{\babel{Interesses}{Interests}}
   \begin{experienceItem}{\babel{Klussen}{Do-It-Yourself}}{}{}{} \end{experienceItem}
   \begin{experienceItem}{\babel{Koken}{Cooking}}{}{}{} \end{experienceItem}
   \begin{experienceItem}{Marathons}{}{}{} \end{experienceItem}
-\end{cSubsection}
+\end{cSubsection}}{}
 
 %----------------------------------------------------------------------------------------
 % REFERENCES

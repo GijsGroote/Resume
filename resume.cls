@@ -4,7 +4,6 @@
 \RequirePackage[parfill]{parskip} % Remove paragraph indentation
 \RequirePackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 
-\RequirePackage{zref-savepos}
 \RequirePackage{xcolor}
 \RequirePackage{framed}
 \PassOptionsToPackage{dvipsnames,svgnames}{xcolor}
@@ -13,6 +12,7 @@
 \RequirePackage{titlesec}
 \RequirePackage{fontawesome5}
 \RequirePackage[hidelinks]{hyperref}
+\RequirePackage{ifthen}
 \RequirePackage{hyperref}
 \hypersetup{%
     colorlinks=true,
@@ -20,8 +20,8 @@
     pdftitle={resume},
     }
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
 
 % For the picture
@@ -98,7 +98,7 @@
 \let\ori@document=\document
 \renewcommand{\document}{
   \ori@document  % Begin document
-  
+
   \printname % Print the name specified with \name
   \printprofession
 
@@ -111,45 +111,10 @@
 }
 
 %----------------------------------------------------------------------------------------
-%	SECTION FORMATTING
+% experienceItem which can be added to rSection, cSection or cSubSection
 %----------------------------------------------------------------------------------------
 
-\newcommand{\craisedrule}[2][0em]{\leaders\hbox{\rule[#1]{1pt}{#2}}\hfill\hspace{-0.325cm}}
-\newcommand{\cfilll}[2][1ex]{
-\dimen0=#2\advance\dimen0 by #1
-\color{themecolor}\craisedrule{2pt}}
-
-
-\newcommand{\raisedrule}[2][0em]{\leaders\hbox{\rule[#1]{1pt}{#2}}\hfill\hspace{-1.1cm}}
-\newcommand{\xfilll}[2][1ex]{
-\dimen0=#2\advance\dimen0 by #1
-\color{themecolor}\raisedrule{2pt}}
-
-% Adjusting the margins
-\enlargethispage{2\baselineskip} % you can adjust the number based on your content's fit in the page
-% Defines the rSection environment for the large sections within the CV
-\newenvironment{rSection}[1]{ % 1 input argument - section name
-  % \begin{framed}
-  \sectionskip
-  \section*{{\LARGE \MakeUppercase{\bf #1}}\xfilll[0pt]{1.5pt}}
-
-  \vspace{-.3cm}
-  \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{1.5em} % Margin within the section
-  }
-  \item[]
-}{
-  \end{list}
-  \vspace{-.2cm}
-% \end{framed}
-}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE FORMATTING
-%----------------------------------------------------------------------------------------
-
-\newenvironment{experienceItem}[4]{ 
-  % \ifthenelse{\larger{\currentpos{text}{100pt}}{\newpage}{}
+\newenvironment{experienceItem}[4]{
   % 4 input arguments - text for top left, top right, bottom left and bottom right
   {\bf #1} \hfill {#2}
   \ifthenelse{\equal{#3}{}}{\vspace{-0.05cm}\\}{   \\
@@ -157,20 +122,40 @@
   }
 }{}
 
-% \newcommand*{\currpos}[1]{%
-%   \zsavepos{#1}%
 
-%   (\zposx{#1}sp, \zposy{#1}sp) =
-%   % (\the\dimexpr\zposx{#1}sp\relax, \the\dimexpr\zposy{#1}sp\relax)%
-% \the\dimexpr\zposx{#1}sp\relax
-% % \ifnum{\value{\zposx{#1}}}>30 {A} \else {B}\fi
-%   % larger than 200?
-%   % \ifthenelse{\value{\zposx{#1}}>{200}}{yes, that larger}{no, not larger}  
-% }
+%----------------------------------------------------------------------------------------
+% setup some stuff for rSection, cSection or cSubSection
+%----------------------------------------------------------------------------------------
+\newcommand{\craisedrule}[2][0em]{\leaders\hbox{\rule[#1]{1pt}{#2}}\hfill\hspace{-0.325cm}}
+\newcommand{\cfilll}[2][1ex]{
+\dimen0=#2\advance\dimen0 by #1
+\color{themecolor}\craisedrule{2pt}}
 
+\newcommand{\raisedrule}[2][0em]{\leaders\hbox{\rule[#1]{1pt}{#2}}\hfill\hspace{-1.1cm}}
+\newcommand{\xfilll}[2][1ex]{
+\dimen0=#2\advance\dimen0 by #1
+\color{themecolor}\raisedrule{2pt}}
 
 % Adjusting the margins
-% \enlargethispage{2\baselineskip}
+% TODO: whaat doe enlarthispage TF do++????
+% \enlargethispage{2\baselineskip} % you can adjust the number based on your content's fit in the page
+
+%----------------------------------------------------------------------------------------
+% rSection, cSection and cSubSection
+%----------------------------------------------------------------------------------------
+\newenvironment{rSection}[1]{ % 1 input argument - section name
+  \sectionskip
+  \section*{{\LARGE \MakeUppercase{\bf #1}}\xfilll[0pt]{1.5pt}}
+  \vspace{-.3cm}
+  \begin{enumerate}{}{ % List for each individual item in the section
+    \setlength{\leftmargin}{1.5em} % Margin within the section
+  }
+  \item[]
+}{
+  \end{enumerate}
+  \vspace{-.2cm}
+}
+
 \newenvironment{cSection}[5]{ \sectionskip
   \centering
   \begin{minipage}{#1}
@@ -187,7 +172,7 @@
   \end{minipage}
 }
 
-\newenvironment{cSubsection}[1]{ % 5 input arguments - environment width, company name, year(s) employed, job title and location
+\newenvironment{cSubsection}[1]{
   \section*{{\LARGE \MakeUppercase{\bf #1}}\cfilll[0pt]{1.5pt}}
   \vspace{-0.2cm}
 
@@ -199,7 +184,6 @@
   \end{list}
   \vspace{-0.3cm}
 }
-
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
 \def\namesize{\huge} % Size of the name at the top of the document

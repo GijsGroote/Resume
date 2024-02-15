@@ -8,8 +8,8 @@
 
 % extend (or summarize) experience
 \newcommand{\extendedWorkExp}{false}
-\newcommand{\extendedEduExp}{true}
-\newcommand{\extendedOtherExp}{true} % extends Commision experience and Interests
+\newcommand{\extendedEduExp}{false}
+\newcommand{\extendedOtherExp}{false} % extends Commision experience and Interests
 % \newcommand{\extendedCV}{true}
 
 % COMMENT UNCOMMENT FOR ENGLISH/DUTCH
@@ -41,8 +41,8 @@
 
 \begin{document}
 
-%	PHOTO
-\ifthenelse{\equal{\usephoto}{true}}{\roundpic{picture.png}\vspace{-0.5cm}}{}
+%	Header (name, adress, socials and optionally a photo)
+\ifthenelse{\equal{\usephoto}{true}}{\roundpic{picture.png}\vspace{-0.48cm}}{}
 
 \input{resume.tex}
 

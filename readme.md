@@ -1,10 +1,9 @@
 ## My Resumes (and grades and diplomas)
 
-Create resumes in a single LOC. These resumes contain all possible combinations 
-with Dutch/English content, with/without photo and extended/summarized versions.
+Create all resumes with all possible combinations of:
+Dutch/English, with/without photo and extended/summarized versions.
 
-Create :
-
+Install and create resumes:
 ```bash
 git clone git@github.com:GijsGroote/Resume.git
 cd Resume

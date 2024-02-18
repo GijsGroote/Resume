@@ -5,7 +5,6 @@
 # Summarized and extended (add _ext to name or not)
 # With and without a photo (add _no_photo to name or not)
 
-
 set -- resume_gsgroote resume_gsgroote_no_photo resume_gsgroote_ext resume_gsgroote_ext_no_photo cv_gsgroote cv_gsgroote_no_photo cv_gsgroote_ext cv_gsgroote_ext_no_photo
 for resume_name ;do
   echo "Create: $resume_name.pdf"

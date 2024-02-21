@@ -1,6 +1,5 @@
 \documentclass{resume} % Use the custom resume.cls style
 
-
 % define:
 % * the language (dutch, enlish)
 % * the use of a photo
@@ -9,7 +8,8 @@
 \ifdefined\useLanguage
   % \useLanguage is defined
 \else % set to english / dutch
-  \newcommand{\useLanguage}{english}
+  % \newcommand{\useLanguage}{english}
+  \newcommand{\useLanguage}{dutch}
 \fi
 \newcommand{\lang}[2]{\ifnum\pdfstrcmp{\useLanguage}{dutch}=0 {#1}\else{#2}\fi}
 
@@ -54,7 +54,9 @@
 \begin{document}
 
 %	Header (name, adress, socials and optionally a photo)
-\ifthenelse{\equal{\usephoto}{true}}{\roundpic{picture.png}\vspace{-0.48cm}}{}
+\ifthenelse{\equal{\usephoto}{true}}{\thispagestyle{PIC}
+  \lang{\vspace{6.8mm}}{\vspace{8.850mm}} 
+}{} 
 
 \input{resume.tex}
 

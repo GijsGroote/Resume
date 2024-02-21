@@ -23,15 +23,15 @@
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
-
 % For the picture
 \RequirePackage{tikz}
-\RequirePackage{float}
-\newcommand{\roundpic}[1]{\begin{tikzpicture}[remember picture,overlay]
-    \node[xshift=130.345mm,yshift=4.5mm,anchor=north west] at (current page.north west){%
-    \includegraphics[height=70mm]{#1}};
-\end{tikzpicture}}
-
+\RequirePackage{fancyhdr}   
+\fancypagestyle{PIC}{% Define FIG as a new style
+    \fancyhf{}
+    \fancyhead[R]{\includegraphics[height=69mm]{picture.png}}
+}
+\renewcommand{\headrulewidth}{0pt}% suppress the line
+\fancyheadoffset[R]{0.37mm} %move the header to the right
 \pagestyle{empty} % Suppress page numbers
 
 %----------------------------------------------------------------------------------------
@@ -135,10 +135,6 @@
 \newcommand{\xfilll}[2][1ex]{
 \dimen0=#2\advance\dimen0 by #1
 \color{themecolor}\raisedrule{2pt}}
-
-% Adjusting the margins
-% TODO: whaat doe enlarthispage TF do++????
-% \enlargethispage{2\baselineskip} % you can adjust the number based on your content's fit in the page
 
 %----------------------------------------------------------------------------------------
 % rSection, cSection and cSubSection

@@ -2,12 +2,14 @@
 %----------------------------------------------------------------------------------------
 %	PROFILE
 %----------------------------------------------------------------------------------------
-
 \begin{rSection}{\lang{Profiel}{Profile}}
-  \lang{Een doorzettende systeem- en regeltechniek ingenieur met passie voor ontwikkeling en design. De karaktereigenschappen kunnen worden samengevat met ambitieus, leidinggevend en nieuwsgierig.}
-  {A persistend control engineer with a passion for development and design. The character traits can be summarized as ambitious, managerial and curious.}
+  \ifthenelse{\equal{\extendedOtherExp}{true}} {%
+    \lang{Een doorzettende systeem- en regeltechniek ingenieur met passie voor robotica en software-engineering. Ik vind dingen maken echt fantastisch, als hobbyist doe ik aan houtbewerking en ik maak graag fietsen. Bij een werkgever ga ik graag aan de slag met automatisering door middel van software ontwikkeling, hierbij vind ik het erg belangrijk wie profijt hebben van de opgeleverde software. In groepsverband ben ik een initiatief nemer en eindig ik vaak een wat leidingevende rol omdat ik het fijn vind het de voortgang van het project te overzien. Mijn karaktereigenschappen kunnen worden samengevat met leergiering, enthousiast en sociaal.}
+  {A persistend control engineer with a passion for robotics and software engineering. I adore making stuff, as hobbyist I do woodworking and make bicycles. At an employer, I would like to work on process automation through software development. It is important to me who profits from the software delivered. In groups, I am an initiator and often take a managerial role because I enjoy overseeing the progress of the project. My character traits can be summarized as eager to learn, enthusiastic and social.}}
+  {%
+    \lang{Ik vind dingen maken echt fantastisch, als hobbyist doe ik aan houtbewerking en ik maak graag fietsen. Bij een werkgever ga ik graag aan de slag met automatisering door middel van software ontwikkeling. In groepsverband ben ik een initiatief nemer en vind ik het fijn de voortgang van het project te overzien. Mijn karaktereigenschappen kunnen worden samengevat met doorzettend, leergiering, enthousiast en sociaal.}
+  {I adore making stuff, as hobbyist I do woodworking and make bicycles. At an employer, I would like to work on process automation through software development. In groups, I am an initiator and enjoy overseeing the progress of the project. My character traits can be summarized as eager to learn, persistent, enthusiastic and social.}}
 \end{rSection}
-
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -118,9 +120,9 @@
 \vspace{0.3cm}
 
   \textit{\lang{Aanvullende behaalde vakken}{Additional courses followed}:}\hspace{0.2cm} OOP Project, Computer Organisation\\
-  \vspace{-0.5cm}}{}
+  \vspace{-0.5cm}
 
-  \noindent\textit{\lang{Schakelprogramma naar}{Bridging Programme to} MSc. Computer Science}\hspace{0.1cm} (\lang{behaald}{completed})
+  \noindent\textit{\lang{Schakelprogramma naar}{Bridging Programme to} MSc. Computer Science}\hspace{0.1cm} (\lang{behaald}{completed})}{}
 
   %------------------------------------------------
   \begin{experienceItem}
@@ -151,14 +153,13 @@
 \end{center}
 
 \textit{\lang{Aanvullende behaalde vakken}{Additional courses followed}:}\hspace{0.2cm}\begin{minipage}{10cm}\vspace{\baselineskip}
-Robot Software Practicals, System Validation\\Robot Motion Planning, Model Predictive Control\end{minipage}}{}
+Robot Software Practicals, System Validation\\Robot Motion Planning, Model Predictive Control\end{minipage}
 
 \textit{\lang{MSc. Scriptie}{MSc. Thesis}:} 
 \begin{center}``\href{https://repository.tudelft.nl/islandora/object/uuid\%3Af988aaf6-c2a7-4782-b5de-8ca6187d03ef?collection=education}{\Large A graph-based search approach for planning and learning}''. 
-\end{center}
+\end{center}}{}
 
 \end{rSection}
-
 
 % ----------------------------------------------------------------------------------------
 %	COMMITEES
@@ -199,6 +200,7 @@ Robot Software Practicals, System Validation\\Robot Motion Planning, Model Predi
   \begin{experienceItem} {\lang{Gemiddeld}{Moderate}}{C++}{}{} \end{experienceItem}
   \begin{experienceItem} {\hphantom{}}{Rust}{}{} \end{experienceItem}
   \begin{experienceItem} {\hphantom{}}{JavaScript/HTML/CSS/MySQL}{}{} \end{experienceItem}
+  \begin{experienceItem} {\hphantom{}}{JAVA}{}{} \end{experienceItem}
   \begin{experienceItem} {\hphantom{}}{Matlab}{}{} \end{experienceItem}
   \begin{experienceItem} {\hphantom{}}{MCRL2}{}{} \end{experienceItem}
 \end{cSubsection}
@@ -250,7 +252,7 @@ Robot Software Practicals, System Validation\\Robot Motion Planning, Model Predi
 %----------------------------------------------------------------------------------------
 \begin{cSubsection}{\lang{Referenties}{References}}
   \begin{experienceItem} {\href{mailto:C.Pezzato@tudelft.nl;corrado.pezzato@gmail.com}{C. Pezzato}}{(\lang{Dagelijkse Thesis Begeleider}{Daily Thesis Supervisor})}{}{} \end{experienceItem}
-  \begin{experienceItem} {\href{mailto:m.g.goossens@tudelft.nl,}{M. Goossens}}{(\lang{Coördinator Faculty Workshop}{Coordinator Faculteit Werkplaats})}{}{} \end{experienceItem}
+\begin{experienceItem} {\href{mailto:m.g.goossens@tudelft.nl,}{M. Goossens}}{\newline\hphantom{}\hfill(\lang{Coordinator Faculteit Werkplaats}{Coördinator Faculty Workshop})}{}{} \end{experienceItem}
 \end{cSubsection}
 
 }

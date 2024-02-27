@@ -8,8 +8,8 @@
 \ifdefined\useLanguage
   % \useLanguage is defined
 \else % set to english / dutch
-  \newcommand{\useLanguage}{english}
-  % \newcommand{\useLanguage}{dutch}
+  % \newcommand{\useLanguage}{english}
+  \newcommand{\useLanguage}{dutch}
 \fi
 \newcommand{\lang}[2]{\ifnum\pdfstrcmp{\useLanguage}{dutch}=0 {#1}\else{#2}\fi}
 

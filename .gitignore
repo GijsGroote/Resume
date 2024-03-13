@@ -1,5 +1,6 @@
 # ignore libreoffice lock files
 ~.lock*
+*.odt#
 
 ## Core latex/pdflatex auxiliary files:
 *.aux

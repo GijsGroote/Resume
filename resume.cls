@@ -7,7 +7,7 @@
 \RequirePackage{xcolor}
 \RequirePackage{framed}
 \PassOptionsToPackage{dvipsnames,svgnames}{xcolor}
-\definecolor{themecolor}{HTML}{a91b27}
+\definecolor{themecolor}{HTML}{20a7db}
 \definecolor{urlcolor}{HTML}{204487}
 \RequirePackage{titlesec}
 \RequirePackage{fontawesome5}

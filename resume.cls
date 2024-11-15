@@ -3,7 +3,8 @@
 
 \RequirePackage[parfill]{parskip} % Remove paragraph indentation
 \RequirePackage{array} % Required for boldface (\bf and \bfseries) tabular columns
-
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
 \RequirePackage{xcolor}
 \RequirePackage{framed}
 \PassOptionsToPackage{dvipsnames,svgnames}{xcolor}
@@ -19,7 +20,6 @@
     urlcolor=blue,
     pdftitle={resume},
     }
-
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 

@@ -32,30 +32,9 @@
 \fi
 
 
-\name{Gijs Stoffer Groote}
-\profession{Control \lang{Ingenieur}{Engineer}}
-
-\ifthenelse{\equal{\usephoto}{true}}
-{%
-\address{\href{tel:+31642498953}{{\color{themecolor} \faIcon{phone}}~+316~424~989~53}\hspace{0.5cm}~{\href{mailto:gijsgroote@hotmail.com}{{\color{themecolor} \faIcon{envelope}}~gijsgroote@hotmail.com}}\hspace{3.1cm}}
-
-
-\address{~\href{https://github.com/GijsGroote}{{\color{themecolor} \faIcon{github}}~Github}\hspace{0.5cm}~\href{https://www.linkedin.com/in/gijs-groote-7ab6aa122/}{{\color{themecolor} \faIcon{linkedin}}~Linkedin}}
-
-\address{\href{https://maps.app.goo.gl/GUd74A39oidkBghJ7}{{\color{themecolor} \faIcon{map-marker}}~Kardinaal Alfrinklaan 21,~3972~SG, Driebergen}}\hspace{3cm}
-}
-{%
-\address{{\href{mailto:gijsgroote@hotmail.com}{{\color{themecolor} \faIcon{envelope}}~gijsgroote@hotmail.com}}\hspace{0.5cm}~\href{https://github.com/GijsGroote}{{\color{themecolor} \faIcon{github}}~Github}\hspace{0.5cm}~\href{https://www.linkedin.com/in/gijs-groote-7ab6aa122/}{{\color{themecolor} \faIcon{linkedin}}~Linkedin}}
-}
-
-
 \begin{document}
 
-%	Header (name, adress, socials and optionally a photo)
-\ifthenelse{\equal{\usephoto}{true}}{\thispagestyle{PIC}
-  \lang{\vspace{6.8mm}}{\vspace{8.850mm}} 
-}{} 
-
+\input{header.tex}
 \input{resume.tex}
 
 \end{document}

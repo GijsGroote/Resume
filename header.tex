@@ -1,35 +1,35 @@
-
 %	Header (name, adress, socials and optionally a photo)
-
-
-
 \begin{tikzpicture}[remember picture, overlay]
+
     % Larger Round photo
+    \ifthenelse{\equal{\usephoto}{true}}{
+        \node[anchor=north east, xshift=-2.7cm, yshift=-0.7cm] at (current page.north east) {
+                \begin{tikzpicture}
+                    % Define the circle radius
+                    % Clip and position the image
+                    \clip (0,0) circle(2.4cm); 
+                    \draw (3,3) node {\includegraphics[height=6cm]{picture.png}};
+                    % \draw (3,3) node {\includegraphics[height=6cm]{picture.png}}; % Use \draw instead of a nested \node
 
-\ifthenelse{\equal{\usephoto}{true}}{
-    \node[anchor=north east, xshift=-2.6cm, yshift=-0.4cm] at (current page.north east) {
-        \begin{tikzpicture}
-            \clip (0,0) circle(2.4cm); % Increased circle size
-            \draw (3,3) node {\includegraphics[height=6cm]{picture.png}}; % Use \draw instead of a nested \node
-        \end{tikzpicture}
-    };}{} 
-    
-    % Information
-    \node[anchor=north west, text width=0.6\textwidth, align=left] at ([xshift=2.5cm, yshift=-1cm]current page.north west) {
-        {\Huge \textbf{Gijs Groote}} \\[0.3cm]
-        {\large Control \lang{Ingenieur}{Engineer}} \\[0.2cm]
-        \begin{tabular}{p{5cm} p{5cm}}
-            % socials
-            \href{https://github.com/GijsGroote}{{\color{themecolor} \faIcon{github}}~Github} & \href{https://www.linkedin.com/in/gijs-groote-7ab6aa122/}{{\color{themecolor} \faIcon{linkedin}}~Linkedin} \\[0.1cm]
-            % contact details
-            \href{tel:+31642498953}{{\color{themecolor} \faIcon{phone}}~+316~424~989~53} & {\href{mailto:gijsgroote@hotmail.com}{{\color{themecolor} \faIcon{envelope}}~gijsgroote@hotmail.com}} \\[0.1cm] 
-            % adress
-            \href{https://maps.app.goo.gl/GUd74A39oidkBghJ7}{{\color{themecolor} \faIcon{map-marker}}~Kardinaal Alfrinklaan 21} & \\
-            \href{https://maps.app.goo.gl/GUd74A39oidkBghJ7}{{\hspace{0.4cm}3972~SG, Driebergen}} & \\
-        \end{tabular}
-    };
-\end{tikzpicture}
+                    % \clip (0,0) circle(2.4cm); % Increased circle size
+                \end{tikzpicture}
+        };}{} 
 
-\vspace{0.5cm} % Adjust spacing to ensure content starts below the header
+        % Information
+        \node[anchor=north west, text width=0.6\textwidth, align=left] at ([xshift=3.5cm, yshift=-1cm]current page.north west) {
+            {\Huge \textbf{Gijs Groote}} \\[0.7cm]
+            \begin{tabular}{p{4.7cm} p{5cm}}
+                % socials
+                \href{https://github.com/GijsGroote}{{\color{themecolor} \faIcon{github}}~Github} & \href{https://www.linkedin.com/in/gijs-groote-7ab6aa122/}{{\color{themecolor} \faIcon{linkedin}}~Linkedin} \\[0.2cm]
+                % contact details
+                \href{tel:+31642498953}{{\color{themecolor} \faIcon{phone}}~+316~424~989~53} & {\href{mailto:gijsgroote@hotmail.com}{{\color{themecolor} \faIcon{envelope}}~gijsgroote@hotmail.com}} \\[0.2cm] 
+                % adress
+                \href{https://maps.app.goo.gl/GUd74A39oidkBghJ7}{{\color{themecolor} \faIcon{map-marker}}~Kardinaal Alfrinklaan 21} & \\
+                \href{https://maps.app.goo.gl/GUd74A39oidkBghJ7}{{\hspace{0.4cm}3972~SG, Driebergen}} & \\
+            \end{tabular}
+        };
+    \end{tikzpicture}
+
+    \vspace{0.9cm} % Adjust spacing to ensure content starts below the header
 
 

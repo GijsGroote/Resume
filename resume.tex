@@ -3,80 +3,70 @@
 %	PROFILE
 %----------------------------------------------------------------------------------------
 \begin{rSection}{\lang{Profiel}{Profile}}
-    \lang{Een doorzettende systeem- en regeltechniek ingenieur met passie voor robotica en software-engineering.
-
-Een vasthoudende control engineer met een passie voor robotica en software engineering. Ik haal veel plezier uit mijn huidige functie en wil hier graag minimaal twee dagen per week blijven werken. Voor de overige werkdagen wil ik graag deel uitmaken van een softwareontwikkelingsteam. Dit met als doel mezelf verder te ontwikkelen als full-stack ontwikkelaar, met de nadruk op desktoptoepassingen.
-    }   
-    {A persistend control engineer with a passion for robotics and software engineering. I find joy at my current position and would like to stay for at least two days a week. For the remaining working days I would like to become part of an software development team. In order to improve further as full stack developer with emphasis on desktop applications.} 
-        \ifthenelse{\equal{\extendedOtherExp}{true}}
-        {%
-            \lang{Ik vind dingen maken echt fantastisch, als hobbyist doe ik aan houtbewerking en ik maak graag fietsen.}
-            {I love making stuff, as hobbyist I enjoy woodworking and make bicycles.}
-        }
-        {}
-    \end{rSection}
+    \lang{Een gedreven systeem- en regeltechniek ingenieur met passie voor robotica en software-ontwikkeling. \ifthenelse{\equal{\extendedOtherExp}{true}}{Ik vind dingen maken echt fantastisch, als hobbyist houd ik me bezig met houtbewerking en maak ik graag fietsen.}{} Op professioneel niveau streef ik ernaar om deel uit te maken van een software-ontwikkelingsteam. Om een gezamelijk doel, software en team met elkaar te kunnen combineren en daarmee nuttige (en uitdagende) projecten te realiseren.} {A persistend control engineer with a passion for robotics and software engineering. \ifthenelse{\equal{\extendedOtherExp}{true}}{{I love making stuff, as hobbyist I enjoy woodworking and make bicycles.}}{} Professionally, I aim to become part of a software-development team, combining a shared purpose, software, and teamwork to realize useful (and beautiful) projects.}
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 \begin{rSection}{\lang{Werk Ervaring}{Work Experience}}
 
-\ifthenelse{\equal{\extendedWorkExp}{true}}
-{%------------------------------------------------
-  \begin{experienceItem}
-    {Reclameverspreiding Eindhoven}{\lang{Augustus}{August} 2008 - September 2012}{\lang{Krantenbezorger}{Newspaper Caretaker}}{Nederwetten, Noord-Brabant}
-\end{experienceItem}}{}
+    \ifthenelse{\equal{\extendedWorkExp}{true}}
+    {%------------------------------------------------
+        \begin{experienceItem}
+            {Reclameverspreiding Eindhoven}{\lang{Augustus}{August} 2008 - September 2012}{\lang{Krantenbezorger}{Newspaper Caretaker}}{Nederwetten, Noord-Brabant}
+    \end{experienceItem}}{}
 
-  %------------------------------------------------
-  \begin{experienceItem}
-    {Slinders}{\lang{Augustus}{August} 2012 - \lang{Juni}{June} 2015}{{\lang{Hulpchef}{Aid Chief}}}{Nederwetten, Noord-Brabant}
-  \end{experienceItem}
+    \ifthenelse{\equal{\extendedWorkExp}{true}}
+    {%------------------------------------------------
+        \begin{experienceItem}
+            {Slinders}{\lang{Augustus}{August} 2012 - \lang{Juni}{June} 2015}{{\lang{Hulpchef}{Aid Chief}}}{Nederwetten, Noord-Brabant}
+        \end{experienceItem}
+    }{}
+
+    \ifthenelse{\equal{\extendedWorkExp}{true}}
+    {%------------------------------------------------
+        \begin{experienceItem}
+            {Flinders}{\lang{Mei}{May} 2015 - \lang{Augustus}{August} 2015}{\lang{Kok}{Cook}}{Groningen, Groningen}
+        \end{experienceItem} 
+
+        %------------------------------------------------
+        \begin{experienceItem}
+            {IKEA}{\lang{Juni}{June} 2017 - \lang{Augustus}{August} 2017}{\lang{Logistiek Medewerker}{logistics employee}}{Delft, \lang{Zuid}{South}-Holland}
+    \end{experienceItem}}{}
 
 
-\ifthenelse{\equal{\extendedWorkExp}{true}}
-{%------------------------------------------------
-  \begin{experienceItem}
-    {Flinders}{\lang{Mei}{May} 2015 - \lang{Augustus}{August} 2015}{\lang{Kok}{Cook}}{Groningen, Groningen}
-\end{experienceItem} 
+    \ifthenelse{\equal{\extendedWorkExp}{true}}
+    {% ------------------------------------------------
+        \begin{experienceItem}
+            {Choconut BV}{(\lang{vakantiewerk}{seasonal work}) December 2013 - December 2018}{\lang{Productiemedewerker}{Industrial Worker}}{Zuidwolde, Drente}
+    \end{experienceItem}}{}
 
-  %------------------------------------------------
-  \begin{experienceItem}
-    {IKEA}{\lang{Juni}{June} 2017 - \lang{Augustus}{August} 2017}{\lang{Logistiek Medewerker}{logistics employee}}{Delft, \lang{Zuid}{South}-Holland}
-\end{experienceItem}}{}
+    %------------------------------------------------
+    \begin{experienceItem}
+        {TU Delft, 3mE}{September 2018 - April 2020}{Studentmentor}{Delft, \lang{Zuid}{South}-Holland}
+    \end{experienceItem}
+
+    %------------------------------------------------
+    \begin{experienceItem}
+        {ROCSYS}{May 2019 - August 2019}{\lang{Junior Ingenieur}{Junior Engineer}}{Delft, \lang{Zuid}{South}-Holland}
+    \end{experienceItem}
 
 
-\ifthenelse{\equal{\extendedWorkExp}{true}}
-{% ------------------------------------------------
-  \begin{experienceItem}
-    {Choconut BV}{(\lang{vakantiewerk}{seasonal work}) December 2013 - December 2018}{\lang{Productiemedewerker}{Industrial Worker}}{Zuidwolde, Drente}
-\end{experienceItem}}{}
+    %------------------------------------------------
+    \begin{experienceItem}
+        {Sport Complex X}{September 2021 - \lang{Februari}{Febuary} 2024}{\lang{Boksleraar}{Boxing Instructor}}{Delft, \lang{Zuid}{South}-Holland}
+    \end{experienceItem}
 
-  %------------------------------------------------
-  \begin{experienceItem}
-    {TU Delft, 3mE}{September 2018 - April 2020}{Studentmentor}{Delft, \lang{Zuid}{South}-Holland}
-  \end{experienceItem}
+    %------------------------------------------------
+    \begin{experienceItem}
+        {TU Delft, 3mE, \lang{Faculteit Werkplaats}{Faculty Workshop}}{September 2017 - September 2024}{\lang{Studentassistent}{Teaching Assistant}}{Delft, \lang{Zuid}{South}-Holland}
+    \end{experienceItem}
 
-\ifthenelse{\equal{\extendedWorkExp}{true}}
-{%------------------------------------------------
-  \begin{experienceItem}
-    {ROCSYS}{May 2019 - August 2019}{\lang{Junior Ingenieur}{Junior Engineer}}{Delft, \lang{Zuid}{South}-Holland}
-\end{experienceItem}
-}{}
-
-  %------------------------------------------------
-  \begin{experienceItem}
-    {Sport Complex X}{September 2021 - \lang{Februari}{Febuary} 2024}{\lang{Boksleraar}{Boxing Instructor}}{Delft, \lang{Zuid}{South}-Holland}
-  \end{experienceItem}
-
-  %------------------------------------------------
-  \begin{experienceItem}
-    {TU Delft, 3mE, \lang{Faculteit Werkplaats}{Faculty Workshop}}{September 2017 - September 2024}{\lang{Studentassistent}{Teaching Assistant}}{Delft, \lang{Zuid}{South}-Holland}
-  \end{experienceItem}
-
-  %------------------------------------------------
-  \begin{experienceItem}
-    {Magneto B.V.}{April 2024 - \lang{Heden}{Present}}{\lang{Ingenieur}{Engineer}}{Delft, \lang{Zuid}{South}-Holland}
-  \end{experienceItem}
+    %------------------------------------------------
+    \begin{experienceItem}
+        {Magneto B.V.}{April 2024 - \lang{Heden}{Present}}{\lang{Ingenieur}{Engineer}}{Delft, \lang{Zuid}{South}-Holland}
+    \end{experienceItem}
 
 \end{rSection}
 
@@ -84,90 +74,90 @@ Een vasthoudende control engineer met een passie voor robotica en software engin
 %	EDUCATION
 % ----------------------------------------------------------------------------------------
 \begin{rSection}{\lang{Opleiding}{Education}}
-\ifthenelse{\equal{\extendedEduExp}{true}}
-{%------------------------------------------------
-  \begin{experienceItem}
-    {\lang{Basis}{Elemantary} School, Sint-Jozef}{2000 - 2009}{Cito Score: 546}{Nederwetten, \lang{Noord}{North}-Brabant}
-\end{experienceItem}
+    \ifthenelse{\equal{\extendedEduExp}{true}}
+    {%------------------------------------------------
+        \begin{experienceItem}
+            {\lang{Basis}{Elemantary} School, Sint-Jozef}{2000 - 2009}{Cito Score: 546}{Nederwetten, \lang{Noord}{North}-Brabant}
+        \end{experienceItem}
 
-  %------------------------------------------------
-  \begin{experienceItem}
-    {\lang{Middelbare}{Secondary} School, Lorentz-Casimir Lyceum}{September 2009 - \lang{Juni}{June} 2014}{\lang{HAVO, Natuur \& Gezondheid + Natuur \& Techniek}{NLQF/EQF niveau: 4S}}{Eindhoven, \lang{Noord}{North}-Brabant}
-  \end{experienceItem}
+        %------------------------------------------------
+        \begin{experienceItem}
+            {\lang{Middelbare}{Secondary} School, Lorentz-Casimir Lyceum}{September 2009 - \lang{Juni}{June} 2014}{\lang{HAVO, Natuur \& Gezondheid + Natuur \& Techniek}{NLQF/EQF niveau: 4S}}{Eindhoven, \lang{Noord}{North}-Brabant}
+        \end{experienceItem}
 
-  %------------------------------------------------
-  \begin{experienceItem}
-    {\lang{Hoger Beroepsonderwijs}{University of Applied Sciences}, Hanze}{September 2014 - \lang{Augustus}{August} 2015} {\lang{Werktuigbouwkunde, Propedeuse}{Mechanical Engineering, Foundation Year} }{Groningen, Groningen}
-  \end{experienceItem}}{}
+        %------------------------------------------------
+        \begin{experienceItem}
+            {\lang{Hoger Beroepsonderwijs}{University of Applied Sciences}, Hanze}{September 2014 - \lang{Augustus}{August} 2015} {\lang{Werktuigbouwkunde, Propedeuse}{Mechanical Engineering, Foundation Year} }{Groningen, Groningen}
+    \end{experienceItem}}{}
 
-  %------------------------------------------------
-  \begin{experienceItem}
-    {\lang{Technische Universiteit}{Technical University} Delft}{September 2015 - \lang{Juni}{June} 2019}{BSc. \lang{Werktuigbouwkunde}{Mechanical Engineering}}{Delft, \lang{Zuid}{South}-Holland}
-  \end{experienceItem}
+    %------------------------------------------------
+    \begin{experienceItem}
+        {\lang{Technische Universiteit}{Technical University} Delft}{September 2015 - \lang{Juni}{June} 2019}{BSc. \lang{Werktuigbouwkunde}{Mechanical Engineering}}{Delft, \lang{Zuid}{South}-Holland}
+    \end{experienceItem}
 
 
-\ifthenelse{\equal{\extendedEduExp}{true}}
-{%------------------------------------------------
-  \begin{experienceItem}
-    {}{}{\lang{Vrije}{Individual} Minor in Computer Science}{}
-  \end{experienceItem}
-  \begin{center}
-  \begin{minipage}{0.45\textwidth}
-  \begin{itemize}
-    \item Object-oriented Programming\\[-3ex]
-    \item Software Quality and Testing\\[-3ex]
-    \item Software Engineering Methods\\[-3ex]
-  \end{itemize}
-  \end{minipage}
-  \begin{minipage}{0.45\textwidth}
-  \begin{itemize}
-    \item Algorithms and Data Structures\\[-3ex]
-    \item Algorithm Design\\[-3ex]
-    \item Automata, Languages and Computability\\[-3ex]
-  \end{itemize}
-  \end{minipage}
-  \end{center}
-\vspace{0.3cm}
+    \ifthenelse{\equal{\extendedEduExp}{true}}
+    {%------------------------------------------------
+        \begin{experienceItem}
+            {}{}{\lang{Vrije}{Individual} Minor in Computer Science}{}
+        \end{experienceItem}
+        \begin{center}
+            \begin{minipage}{0.45\textwidth}
+                \begin{itemize}
+                    \item Object-oriented Programming\\[-3ex]
+                    \item Software Quality and Testing\\[-3ex]
+                    \item Software Engineering Methods\\[-3ex]
+                \end{itemize}
+            \end{minipage}
+            \begin{minipage}{0.45\textwidth}
+                \begin{itemize}
+                    \item Algorithms and Data Structures\\[-3ex]
+                    \item Algorithm Design\\[-3ex]
+                    \item Automata, Languages and Computability\\[-3ex]
+                \end{itemize}
+            \end{minipage}
+        \end{center}
+        \vspace{0.3cm}
 
-  \textit{\lang{Aanvullende behaalde vakken}{Additional courses followed}:}\hspace{0.2cm} OOP Project, Computer Organisation\\
-  \vspace{-0.5cm}
+        \textit{\lang{Aanvullende behaalde vakken}{Additional courses followed}:}\hspace{0.2cm} OOP Project, Computer Organisation\\
+        \vspace{-0.5cm}
 
-  \noindent\textit{\lang{Schakelprogramma naar}{Bridging Programme to} MSc. Computer Science}\hspace{0.1cm} (\lang{behaald}{completed})}{}
+    \noindent\textit{\lang{Schakelprogramma naar}{Bridging Programme to} MSc. Computer Science}\hspace{0.1cm} (\lang{behaald}{completed})}{}
 
-  %------------------------------------------------
-  \begin{experienceItem}
-    {\lang{Technische Universiteit}{Technical University} Delft}{September 2019 - \lang{Juni}{June} 2023}{MSc. System \& Control}{Delft, \lang{Zuid}{South}-Holland}
-  \end{experienceItem}
+    %------------------------------------------------
+    \begin{experienceItem}
+        {\lang{Technische Universiteit}{Technical University} Delft}{September 2019 - \lang{Juni}{June} 2023}{MSc. System \& Control}{Delft, \lang{Zuid}{South}-Holland}
+    \end{experienceItem}
 
-\ifthenelse{\equal{\extendedEduExp}{true}}
-{%------------------------------------------------
-  \begin{experienceItem}
-    {}{}{\lang{Keuzevakken}{Electives}:}{}
-  \end{experienceItem}
-  \vspace{-0.1cm}
-  \begin{center}
-  \begin{minipage}{0.45\textwidth}
-  \begin{itemize}
-    \item Fault diagnosis and Fault Tolerant Control\\[-3ex]
-    \item Adaptive Optics Design Project\\[-3ex]
-    \item Networked and Distributed Control
-  \end{itemize}
-  \end{minipage}
-  \begin{minipage}{0.45\textwidth}
-  \begin{itemize}
-    \item Control for High Resolution Imaging\\[-3ex]
-    \item Machine Learning 1\\[-3ex]
-    \item Machine Learning 2
-  \end{itemize}
-  \end{minipage}
-\end{center}
+    \ifthenelse{\equal{\extendedEduExp}{true}}
+    {%------------------------------------------------
+        \begin{experienceItem}
+            {}{}{\lang{Keuzevakken}{Electives}:}{}
+        \end{experienceItem}
+        \vspace{-0.1cm}
+        \begin{center}
+            \begin{minipage}{0.45\textwidth}
+                \begin{itemize}
+                    \item Fault diagnosis and Fault Tolerant Control\\[-3ex]
+                    \item Adaptive Optics Design Project\\[-3ex]
+                    \item Networked and Distributed Control
+                \end{itemize}
+            \end{minipage}
+            \begin{minipage}{0.45\textwidth}
+                \begin{itemize}
+                    \item Control for High Resolution Imaging\\[-3ex]
+                    \item Machine Learning 1\\[-3ex]
+                    \item Machine Learning 2
+                \end{itemize}
+            \end{minipage}
+        \end{center}
 
-\textit{\lang{Aanvullende behaalde vakken}{Additional courses followed}:}\hspace{0.2cm}\begin{minipage}{10cm}\vspace{\baselineskip}
-Robot Software Practicals, System Validation\\Robot Motion Planning, Model Predictive Control\end{minipage}
+        \textit{\lang{Aanvullende behaalde vakken}{Additional courses followed}:}\hspace{0.2cm}\begin{minipage}{10cm}\vspace{\baselineskip}
+        Robot Software Practicals, System Validation\\Robot Motion Planning, Model Predictive Control\end{minipage}
 
-\textit{\lang{MSc. Scriptie}{MSc. Thesis}:} 
-\begin{center}``\href{https://repository.tudelft.nl/islandora/object/uuid\%3Af988aaf6-c2a7-4782-b5de-8ca6187d03ef?collection=education}{\Large A graph-based search approach for planning and learning}''. 
-\end{center}}{}
+        \textit{\lang{MSc. Scriptie}{MSc. Thesis}:} 
+        \begin{center}``\href{https://repository.tudelft.nl/islandora/object/uuid\%3Af988aaf6-c2a7-4782-b5de-8ca6187d03ef?collection=education}{\Large A graph-based search approach for planning and learning}''. 
+    \end{center}}{}
 
 \end{rSection}
 
@@ -176,23 +166,23 @@ Robot Software Practicals, System Validation\\Robot Motion Planning, Model Predi
 % ----------------------------------------------------------------------------------------
 \begin{rSection}{\lang{Comissie's}{Commitees}}
 
-\ifthenelse{\equal{\extendedOtherExp}{true}}
-{%------------------------------------------------
-  \begin{experienceItem}{Virgiel, \lang{Onderhoud Comissie}{Renovator Commission}}{September 2016 - September 2017}{\lang{Lid Onderhoudcommissie}{Member Renovator Commision}}{Delft, \lang{Zuid}{South}-Holland}
-\end{experienceItem}
+    \ifthenelse{\equal{\extendedOtherExp}{true}}
+    {%------------------------------------------------
+        \begin{experienceItem}{Virgiel, \lang{Onderhoud Comissie}{Renovator Commission}}{September 2016 - September 2017}{\lang{Lid Onderhoudcommissie}{Member Renovator Commision}}{Delft, \lang{Zuid}{South}-Holland}
+        \end{experienceItem}
 
-%------------------------------------------------
-\begin{experienceItem}{Virgiel, \lang{Onderhoud Weekend Comissie}{Renovator Weekend Commission}}{September 2017 - September 2018}{\lang{Organisator}{Organiser}}{Delft, \lang{Zuid}{South}-Holland}
-\end{experienceItem} }{}
+        %------------------------------------------------
+        \begin{experienceItem}{Virgiel, \lang{Onderhoud Weekend Comissie}{Renovator Weekend Commission}}{September 2017 - September 2018}{\lang{Organisator}{Organiser}}{Delft, \lang{Zuid}{South}-Holland}
+    \end{experienceItem} }{}
 
-  %------------------------------------------------
-  \begin{experienceItem}{Virgiel, Barbara's \lang{Boks Academie}{Boxing Academy}}{September 2018 - September 2020}{\lang{Voorzitter}{Chairman}}{Delft, \lang{Zuid}{South}-Holland}
-  \end{experienceItem}
+    %------------------------------------------------
+    \begin{experienceItem}{Virgiel, Barbara's \lang{Boks Academie}{Boxing Academy}}{September 2018 - September 2020}{\lang{Voorzitter}{Chairman}}{Delft, \lang{Zuid}{South}-Holland}
+    \end{experienceItem}
 
-  %------------------------------------------------
-  \begin{experienceItem}
-    {TU Delft, 3mE, \lang{Facultaire Studenten Raad}{Faculty Student Council}}{September 2020 - September 2021}{\lang{Secretaris}{Secretary}}{Delft, \lang{Zuid}{South}-Holland}
-  \end{experienceItem}
+    %------------------------------------------------
+    \begin{experienceItem}
+        {TU Delft, 3mE, \lang{Facultaire Studenten Raad}{Faculty Student Council}}{September 2020 - September 2021}{\lang{Secretaris}{Secretary}}{Delft, \lang{Zuid}{South}-Holland}
+    \end{experienceItem}
 
 \end{rSection}
 
@@ -201,90 +191,91 @@ Robot Software Practicals, System Validation\\Robot Motion Planning, Model Predi
 %----------------------------------------------------------------------------------------
 \vspace{0.4cm}
 \begin{cSection}{\textwidth}{0.47\textwidth}{0.48\textwidth}
-{%
-%%----------------------------------------------------------------------------------------
-%%	SKILLS
-%%----------------------------------------------------------------------------------------
-\begin{cSubsection}{\lang{Vaardigheden}{Skills}}
-  \begin{experienceItem} {\lang{Gevorderd}{Advanced}}{Python}{}{} \end{experienceItem}
-  \begin{experienceItem} {\hphantom{}}{Linux}{}{} \end{experienceItem}
-  \begin{experienceItem} {\hphantom{}}{LaTex}{}{} \end{experienceItem}
-  \begin{experienceItem} {\hphantom{}}{Solidworks}{}{} \end{experienceItem}
-  \begin{experienceItem} {\hphantom{}}{Autodesk Inventor}{}{} \end{experienceItem}
+    {%
+        %%----------------------------------------------------------------------------------------
+        %%	SKILLS
+        %%----------------------------------------------------------------------------------------
+        \begin{cSubsection}{\lang{Vaardigheden}{Skills}}
+            \begin{experienceItem} {\lang{Gevorderd}{Advanced}}{Python}{}{} \end{experienceItem}
+            \begin{experienceItem} {\hphantom{}}{Linux}{}{} \end{experienceItem}
+            \begin{experienceItem} {\hphantom{}}{LaTex}{}{} \end{experienceItem}
+            \begin{experienceItem} {\hphantom{}}{Solidworks}{}{} \end{experienceItem}
+            \begin{experienceItem} {\hphantom{}}{Autodesk Inventor}{}{} \end{experienceItem}
 
-  \begin{experienceItem} {\lang{Gemiddeld}{Moderate}}{C++}{}{} \end{experienceItem}
-  \begin{experienceItem} {\hphantom{}}{Rust}{}{} \end{experienceItem}
-  \begin{experienceItem} {\hphantom{}}{JavaScript/HTML/CSS/MySQL}{}{} \end{experienceItem}
-  \begin{experienceItem} {\hphantom{}}{JAVA}{}{} \end{experienceItem}
-  \begin{experienceItem} {\hphantom{}}{Matlab}{}{} \end{experienceItem}
-  \begin{experienceItem} {\hphantom{}}{MCRL2}{}{} \end{experienceItem}
-  \begin{experienceItem} {\hphantom{}}{LabView}{}{} \end{experienceItem}
-\end{cSubsection}
+            \begin{experienceItem} {\lang{Gemiddeld}{Moderate}}{C++}{}{} \end{experienceItem}
+            \begin{experienceItem} {\hphantom{}}{Rust}{}{} \end{experienceItem}
+            \begin{experienceItem} {\hphantom{}}{JavaScript/HTML/CSS/MySQL}{}{} \end{experienceItem}
+            \begin{experienceItem} {\hphantom{}}{JAVA}{}{} \end{experienceItem}
+            \begin{experienceItem} {\hphantom{}}{Matlab}{}{} \end{experienceItem}
+            \begin{experienceItem} {\hphantom{}}{MCRL2}{}{} \end{experienceItem}
+            \begin{experienceItem} {\hphantom{}}{LabView}{}{} \end{experienceItem}
+        \end{cSubsection}
 
 
-%----------------------------------------------------------------------------------------
-% CHARACTER TRAITS
-%----------------------------------------------------------------------------------------
+        %----------------------------------------------------------------------------------------
+        % CHARACTER TRAITS
+        %----------------------------------------------------------------------------------------
 
-\ifthenelse{\equal{\extendedOtherExp}{true}}
-{%------------------------------------------------
-\begin{cSubsection}{\lang{Karakter\newline Eigenschappen}{Character Traits}}
-  \begin{experienceItem} {\hphantom{}}{\lang{Leergierig}{Eager to Learn}}{}{} \end{experienceItem}
-  \begin{experienceItem} {\hphantom{}}{\lang{Enthousiast}{Enthousiastic}}{}{} \end{experienceItem}
-  \begin{experienceItem} {\hphantom{}}{\lang{Sociaal}{Social}}{}{} \end{experienceItem}
-  \begin{experienceItem} {\hphantom{}}{\lang{Doorzettend}{Persistent}}{}{} \end{experienceItem}
-\end{cSubsection}}{}
+        \ifthenelse{\equal{\extendedOtherExp}{true}}
+        {%------------------------------------------------
+            \begin{cSubsection}{\lang{Karakter\newline Eigenschappen}{Character Traits}}
+                \begin{experienceItem} {\hphantom{}}{\lang{Leergierig}{Eager to Learn}}{}{} \end{experienceItem}
+                \begin{experienceItem} {\hphantom{}}{\lang{Enthousiast}{Enthousiastic}}{}{} \end{experienceItem}
+                \begin{experienceItem} {\hphantom{}}{\lang{Perfectionistisch}{Perfectionistic}}{}{} \end{experienceItem}
+                \begin{experienceItem} {\hphantom{}}{\lang{Doorzettend}{Persistent}}{}{} \end{experienceItem}
+        \end{cSubsection}}{}
 
-%----------------------------------------------------------------------------------------
-%	CERTIFICATE
-%----------------------------------------------------------------------------------------
-\begin{cSubsection}{\lang{Certificaten}{Certificates}}
-    \begin{experienceItem} {SolidWorks}{Associate}{}{} \end{experienceItem}
-    \begin{experienceItem} {NOC NSF}{AVI}{}{} \end{experienceItem}
-    \begin{experienceItem} {CCVX}{\lang{Wiskunde B}{Math B}}{}{} \end{experienceItem}
-    \begin{experienceItem} {CCVX}{\lang{Natuurkunde}{Physics}}{}{} \end{experienceItem}
-    \begin{experienceItem} {SSVV}{VOL-VCA \lang{Veiligheidscertificaat}{Savety Certificate}}{}{} \end{experienceItem}
-    \begin{experienceItem} {\lang{Oranje Kruis}{Orange Cross}}{\lang{EHBO}{First Aid}}{}{} \end{experienceItem}
-    \begin{experienceItem} {NBB}{\lang{Boksfitinstructeur}{Boxing Instructor}}{}{} \end{experienceItem}
-\end{cSubsection}
-}
-{%
-%----------------------------------------------------------------------------------------
-% GENERAL INFO
-%----------------------------------------------------------------------------------------
-\begin{cSubsection}{\lang{Algemeen}{General}}
-  \begin{experienceItem} {\lang{Geboorte}{Birth}, Utrecht}{27 September 1996}{}{} \end{experienceItem}
-  \begin{experienceItem} {\lang{Geslacht}{Gender}}{\lang{Man}{Male}}{}{} \end{experienceItem}
-  \begin{experienceItem} {\lang{Rijbewijzen}{Driver Licences}}{AM, A1, A2, A, B, T}{}{} \end{experienceItem}
-\end{cSubsection}
 
-%----------------------------------------------------------------------------------------
-%	LANGUAGES
-%----------------------------------------------------------------------------------------
-\begin{cSubsection}{\lang{Talen}{languages}}
-  \begin{experienceItem} {\lang{Dutch}{Nederlands}}{\lang{moedertaal}{Native}}{}{} \end{experienceItem}
-  \begin{experienceItem} {\lang{Engels}{English}}{\lang{vloeiend}{Fluent}}{}{} \end{experienceItem}
-\end{cSubsection}
+        %----------------------------------------------------------------------------------------
+        %	CERTIFICATE
+        %----------------------------------------------------------------------------------------
+        \begin{cSubsection}{\lang{Certificaten}{Certificates}}
+            \begin{experienceItem} {SolidWorks}{Associate}{}{} \end{experienceItem}
+            \begin{experienceItem} {NOC NSF}{AVI}{}{} \end{experienceItem}
+            \begin{experienceItem} {CCVX}{\lang{Wiskunde B}{Math B}}{}{} \end{experienceItem}
+            \begin{experienceItem} {CCVX}{\lang{Natuurkunde}{Physics}}{}{} \end{experienceItem}
+            \begin{experienceItem} {SSVV}{VOL-VCA \lang{Veiligheidscertificaat}{Savety Certificate}}{}{} \end{experienceItem}
+            \begin{experienceItem} {\lang{Oranje Kruis}{Orange Cross}}{\lang{EHBO}{First Aid}}{}{} \end{experienceItem}
+            \begin{experienceItem} {NBB}{\lang{Boksfitinstructeur}{Boxing Instructor}}{}{} \end{experienceItem}
+        \end{cSubsection}
+    }
+    {%
+        %----------------------------------------------------------------------------------------
+        % GENERAL INFO
+        %----------------------------------------------------------------------------------------
+        \begin{cSubsection}{\lang{Algemeen}{General}}
+            \begin{experienceItem} {\lang{Geboorte}{Birth}, Utrecht}{27 September 1996}{}{} \end{experienceItem}
+            \begin{experienceItem} {\lang{Geslacht}{Gender}}{\lang{Man}{Male}}{}{} \end{experienceItem}
+            \begin{experienceItem} {\lang{Rijbewijzen}{Driver Licences}}{AM, A1, A2, A, B, T}{}{} \end{experienceItem}
+        \end{cSubsection}
 
-%----------------------------------------------------------------------------------------
-%	HOBBIES
-%----------------------------------------------------------------------------------------
-\ifthenelse{\equal{\extendedOtherExp}{true}}
-{%------------------------------------------------
-\begin{cSubsection}{\lang{Interesses}{Interests}}
-  \begin{experienceItem}{\lang{Klussen}{Do-It-Yourself}}{}{}{} \end{experienceItem}
-  \begin{experienceItem}{\lang{Koken}{Cooking}}{}{}{} \end{experienceItem}
-  \begin{experienceItem}{Marathons}{}{}{} \end{experienceItem}
-\end{cSubsection}}{}
+        %----------------------------------------------------------------------------------------
+        %	LANGUAGES
+        %----------------------------------------------------------------------------------------
+        \begin{cSubsection}{\lang{Talen}{languages}}
+            \begin{experienceItem} {\lang{Dutch}{Nederlands}}{\lang{moedertaal}{Native}}{}{} \end{experienceItem}
+            \begin{experienceItem} {\lang{Engels}{English}}{\lang{vloeiend}{Fluent}}{}{} \end{experienceItem}
+        \end{cSubsection}
 
-%----------------------------------------------------------------------------------------
-% REFERENCES
-%----------------------------------------------------------------------------------------
-\begin{cSubsection}{\lang{Referenties}{References}}
-  \begin{experienceItem} {\href{mailto:C.Pezzato@tudelft.nl}{C. Pezzato}}{(\lang{Dagelijkse Thesis Begeleider}{Daily Thesis Supervisor})}{}{} \end{experienceItem}
-  \begin{experienceItem} {\href{mailto:jilles@magneto.systems}{J. Langeveld}}{\newline\hphantom{}\hfill(\lang{Manager Product ontwikkeling bij}{Manager Product development at} Magneto)}{}{} \end{experienceItem}
-\end{cSubsection}
+        %----------------------------------------------------------------------------------------
+        %	HOBBIES
+        %----------------------------------------------------------------------------------------
+        \ifthenelse{\equal{\extendedOtherExp}{true}}
+        {%------------------------------------------------
+            \begin{cSubsection}{\lang{Interesses}{Interests}}
+                \begin{experienceItem}{\lang{Klussen}{Do-It-Yourself}}{}{}{} \end{experienceItem}
+                \begin{experienceItem}{\lang{Koken}{Cooking}}{}{}{} \end{experienceItem}
+                \begin{experienceItem}{Marathons}{}{}{} \end{experienceItem}
+        \end{cSubsection}}{}
 
-}
+        %----------------------------------------------------------------------------------------
+        % REFERENCES
+        %----------------------------------------------------------------------------------------
+        \begin{cSubsection}{\lang{Referenties}{References}}
+            \begin{experienceItem} {\href{mailto:C.Pezzato@tudelft.nl}{C. Pezzato}}{(\lang{Dagelijkse Thesis Begeleider}{Daily Thesis Supervisor})}{}{} \end{experienceItem}
+            \begin{experienceItem} {\href{mailto:jilles@magneto.systems}{J. Langeveld}}{\newline\hphantom{}\hfill(Magneto's \lang{Manager Product ontwikkeling}{Manager Product development})}{}{} \end{experienceItem}
+        \end{cSubsection}
+
+    }
 \end{cSection}
 

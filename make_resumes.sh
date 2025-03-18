@@ -18,17 +18,8 @@ for resume_name ;do
   if [[ "$resume_name" == *"resume"* ]]; then USA_LANGUAGE='english'; else USE_LANGUAGE='dutch'; fi
   if [[ "$resume_name" == *"_ext"* ]]; then EXTEND='true'; else EXTEND='false'; fi;
 
-  pdflatex -interaction=batchmode "\def\usephoto{$USE_PHOTO} \def\useLanguage{$USE_LANGUAGE} \def\extended{$EXTEND} \input{main.tex}" 
+  pdflatex -interaction=batchmode "\def\usephoto{$USE_PHOTO} \def\useLanguage{$USE_LANGUAGE} \def\extended{$EXTEND} \input{resume.tex}" 
 
   mv main.pdf ./pdfs/resumes/$resume_name.pdf
-  #
-  # rm  main.fdb_latexmk main.log main.out main.aux main.fls
-#   if [ $USE_PHOTO = 'true' ]
-#   then
-#     echo 'take a sleep'
-#     sleep 0.5 # short sleep, otherwise photo crashes 
-#   fi
-
 
 done
-

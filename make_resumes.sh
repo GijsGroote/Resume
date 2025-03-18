@@ -20,6 +20,6 @@ for resume_name ;do
 
   pdflatex -interaction=batchmode "\def\usephoto{$USE_PHOTO} \def\useLanguage{$USE_LANGUAGE} \def\extended{$EXTEND} \input{resume.tex}" 
 
-  mv main.pdf ./pdfs/resumes/$resume_name.pdf
+  mv resume.pdf ./pdfs/resumes/$resume_name.pdf
 
 done

@@ -60,9 +60,27 @@
         {Magneto B.V.}{April 2024 - April 2025}{\lang{Ingenieur}{Engineer}}{Delft, \lang{Zuid}{South}-Holland}
     \end{experienceItem}
 
+    \ifthenelse{\equal{\extendedWorkExp}{true}}
+    {%------------------------------------------------
+    \begin{itemize}
+            \item \lang{Ontwikkeling applicatie voor de productie van magnetocalorische materiaal door middel van 3D printen.}{Application development for the production of magnetocaloric material using 3D printing.}
+    \end{itemize}
+    }
+
     %------------------------------------------------
     \begin{experienceItem}
-        {Batenburg Bellt}{April 2025 - \lang{Heden}{Present}}{\lang{Applicatie Ingenieur}{Application Engineer}}{Zeist, Utrecht}
+        {Batenburg Bellt}{April 2025 - April 2026}{\lang{Applicatie Ingenieur}{Application Engineer}}{Zeist, Utrecht}
     \end{experienceItem}
+
+    %------------------------------------------------
+    \ifthenelse{\equal{\extendedWorkExp}{true}}
+    {%------------------------------------------------
+        \begin{itemize}
+        \item \lang{Doorvoeren van PLC-, SCADA- en HMI-wijzigingen bij procesaanpassingen.}{Implement PLC, SCADA and HMI changes for factory modifications.}
+        \end{itemize}
+    % \begin{itemize}
+    %     \item \lang{Automatisering: Doorvoeren van PLC-, SCADA- en HMI-wijzigingen bij procesaanpassingen.}{Automation: Implement PLC, SCADA and HMI changes during factory changes.}
+    % \end{\itemize}
+}
 
 \end{rSection}
